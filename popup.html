@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      width: 350px;
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero is-danger" style="height: 50px; margin-top: 7px;">
+
+    <h1 class="title" style="text-align: center; margin-top: 10px; font-size: 20px;">
+      Let's Find Your Movie/TV Series ?
+    </h1>
+
+  </section>
+  <div class="card" style=" width: 350px;
+        height: 575px;">
+    <div class="card-image">
+      <img
+        src="https://images.unsplash.com/photo-1562329265-95a6d7a83440?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGhlYXRlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        style="width: 350px; height: 348px;">
+      <span class="card-title">Movify</span>
+      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+    </div>
+
+    <div class="card-content">
+      <h2>Enter Your Movie and Scroll BELOW</h2>
+      <br>
+      <p>Welcome to Movify! Not sure on wathing a movie? Now you know which movie to watch and have the pleasure of
+        entertainment! </p>
+      <br>
+      <p style="font-size: 10px;">All Rights Reserved To OMDB API</p>
+    </div>
+  </div>
+
+  <div class="row">
+
+
+    <div class="input-field col s12">
+      <i class="material-icons prefix">account_circle</i>
+      <input placeholder="Movie Name" id="movie_name" type="text" class="validate">
+
+    </div>
+
+  </div>
+
+
+  <h4 id="cityName"></h4>
+
+  <button class="btn waves-effect waves-light" type="submit" name="action" id="submitB"
+    style="width: 50%; margin-left: 25%;">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+  <section class="section" id="details" style="display: none;">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-offset-4 is-4">
+
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-50x50">
+
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <span class="title"></span>
+                  <br>
+                  <img style="margin-left: 0px; margin-right: 100px;" id="poster" src="" alt="">
+                  <h1 id="title"></h1>
+                  <span style="text-align: center; font-size: 15px;" class="subtitle" id="rating"></span>
+                  <br>
+                  <span style="text-align: center; font-size: 15px;" class="subtitle" id="rating2"></span>
+                  <br>
+                  <span style="text-align: center; font-size: 15px;" class="subtitle" id="plot"></span>
+                  <br>
+                  <span style="text-align: center; font-size: 15px;" class="subtitle" id="actor"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="popup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
